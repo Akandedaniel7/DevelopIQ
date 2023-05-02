@@ -874,6 +874,7 @@ section {
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
+  cursor: grab;
 }
 
 .testimonials .testimonial-item {
