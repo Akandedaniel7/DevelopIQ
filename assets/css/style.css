@@ -949,6 +949,8 @@ section {
   background-color: #3498db;
 }
 
+
+
 @media (max-width: 767px) {
   .testimonials .testimonial-wrap {
     padding-left: 0;
@@ -969,6 +971,9 @@ section {
     left: auto;
   }
 }
+
+/* Breadcrumbs */
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1486,6 +1491,7 @@ section {
   box-shadow: none;
   font-size: 14px;
   padding: 10px 15px;
+  resize: none;
 }
 
 .contact .php-email-form input:focus,
@@ -1516,6 +1522,82 @@ section {
   }
 }
 
+/* Get Started  */
+.get-started .content {
+  padding: 30px 0;
+}
+
+.get-started .content h3 {
+  font-size: 36px;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.get-started .content h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3498db;
+  left: 0;
+  bottom: 0;
+}
+
+.get-started .content p {
+  font-size: 14px;
+}
+
+@media (min-width: 992px){
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
+}
+
+.get-started .php-email-form {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+}
+
+.get-started .php-email-form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.get-started .php-email-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.col-md-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.get-started .php-email-form input {
+  padding: 12px 15px;
+}
+
+.get-started .php-email-form input, .get-started .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+.col-md-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1524,6 +1606,66 @@ section {
   background: #f8f8f8;
   min-height: 40px;
   margin-top: 86px;
+}
+
+.breadcrumbs-1 {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-1::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs-1 h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs-1 ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.breadcrumbs-1 ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs-1 ol {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3498db;
+}
+
+.breadcrumbs-1 ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+.breadcrumbs-1 ol a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs-1 ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
 }
 
 @media (max-width: 992px) {
