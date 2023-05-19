@@ -249,4 +249,8 @@
       left: 10px;
       font-size: 22px;
     }
+
+    .searchsectionchild i {
+      padding: 8px 15px;
+    }
   }
