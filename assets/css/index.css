@@ -133,6 +133,7 @@
 }
 
 .webDevelopment,
+.MobileAppDevelopment,
 .brandingPublicity{
     border-bottom: 1px solid #999;
     padding-bottom: 7px;
@@ -141,6 +142,7 @@
 }
 
 .webDevelopment i,
+.MobileAppDevelopment i,
 .brandingPublicity i,
 .maintainace i{
     color: #3498db;
