@@ -76,55 +76,160 @@
      <!-- ======= Get Started Section ======= -->
      <section id="get-started" class="get-started section-bg">
         <div class="container">
-  
-          <div class="row justify-content-between gy-4">
-  
-            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
-              <div class="content">
-                <h3>Minus hic non reiciendis ea possimus at quia.</h3>
-                <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus dicta.
-                <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt porro magni qui necessitatibus dolorem at animi cupiditate.</p>
-              </div>
+         <form action="">
+          <!-- Form -->
+          <div class="form1Flex">
+            <!-- flex 1 -->
+            <div class="formFlex_i">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Enter Name" name="name" required>
             </div>
-  
-            <div class="col-lg-5" data-aos="fade">
-              <form action="forms/quote.php" method="post" class="php-email-form">
-                <h3>Get a quote</h3>
-                <p>Vel nobis odio laboriosam et hic voluptatem. Inventore vitae totam. Rerum repellendus enim linead sero park flows.</p>
-                <div class="row gy-3">
-  
-                  <div class="col-md-12">
-                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                  </div>
-  
-                  <div class="col-md-12 ">
-                    <input type="email" class="form-control" name="email" placeholder="Email" required>
-                  </div>
-  
-                  <div class="col-md-12">
-                    <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                  </div>
-  
-                  <div class="col-md-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                  </div>
-  
-                  <div class="col-md-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-  
-                    <button type="submit">Get a quote</button>
-                  </div>
-  
-                </div>
-              </form>
-            </div><!-- End Quote Form -->
-  
+            <!-- flex 2 -->
+            <div class="formFlex_ii">
+             <label for="email">Email</label>
+             <input type="email" name="email" id=""  placeholder="Enter Email" required>
+            </div>
           </div>
-  
-        </div>
-      </section><!-- End Get Started Section -->
+
+          <!-- Form -->
+          <div class="form1Flex">
+            <!-- flex 1 -->
+            <div class="formFlex_i">
+              <label for="name">Contact</label>
+              <input type="number" placeholder="Enter Contact Number " name="number" required>
+            </div>
+            <!-- flex 2 -->
+            <div class="formFlex_ii">
+             <label for="text">Country</label>
+             <input type="text" name="text" id=""  placeholder="Enter Country Name" required>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="form1Flex">
+            <!-- flex 1 -->
+            <div class="formFlex_i">
+              <label for="name">Approximate Budget</label>
+              <select id="dropdown" name="dropdown">
+                <option value="option1" disable selected>Select Aproxilate Budget</option>
+                <option value="option2">$5000 to $10000</option>
+                <option value="option3">$10000 to $25000</option>
+                <option value="option4">$25000 to $50000</option>
+                <option value="option5">$50000+</option>
+                <option value="option6">Negotiable</option>
+              </select>
+            </div>
+            <!-- flex 2 -->
+            <div class="formFlex_ii form2">
+             <label for="number"></label>
+             <input type="number" name="text" id=""  placeholder="Enter Whatsapp Number" required>
+            </div>
+          </div>
+
+         <!-- formGeneral  -->
+         <div class="formGeneral">
+          <label for="name">Details</label>
+          <textarea name="text" id="" cols="10" rows="4" placeholder="Project Description"></textarea>
+         </div>
+
+         <!-- serviceTypes  -->
+         <div class="serviceTypes">
+          <h4>Select Service Type</h4>
+          <div class="serviceDetails">
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Web Design</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Web Design</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Software Design</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Mobile App</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for=""> Graphics/Animation</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for=""> Digital Marketting</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Game Design</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Maintanace</label>
+          </div>
+          <!-- details -->
+          <div class="serviceTypesDetails">
+            <input type="checkbox" name="" id="">
+            <label for="">Consulting</label>
+          </div>
+          </div>
+         </div>
+         
+           <!-- Form -->
+           <div class="form1Flex">
+            <!-- flex 1 -->
+            <div class="formFlex_i">
+              <label for="name">Start Date</label>
+              <input type="text" placeholder="When are you ready to start? " name="text" required>
+            </div>
+            <!-- flex 2 -->
+            <div class="formFlex_ii">
+             <label for="text">Company Name </label>
+             <input type="text" name="text" id=""  placeholder="Enter your company or bussiness name" required>
+            </div>
+          </div>
+
+           <!-- Form -->
+           <div class="form1Flex">
+            <!-- flex 1 -->
+            <div class="formFlex_i">
+              <label for="name">Position</label>
+              <input type="number" placeholder="What is your position in your company " name="number" required>
+            </div>
+            <!-- flex 2 -->
+            <div class="formFlex_ii">
+              <label for="name">How did you know DevelopIQ</label>
+              <select id="dropdown" name="dropdown">
+                <option value="option1" disabled selected>Referral</option>
+                <option value="option2">Facebook</option>
+                <option value="option3">Twitter</option>
+                <option value="option4">LinkedIn</option>
+                <option value="option5">Instagram</option>
+                <option value="option6">Goggle Search</option>
+                <option value="option7">Clutch</option>
+                <option value="option8">Family or Friends</option>
+                <option value="option9">WhatsApp</option>
+                <option value="option10">Sortlist</option>
+                <option value="option11">TrustPilot</option>
+                <option value="option12">GoodFirm</option>
+                <option value="option13">Others</option>
+              </select>
+            </div>
+          </div>
+         </form>
+          </div>
+      </section>
+      
+      <!-- End Get Started Section -->
   </main>
   
 </footer><!-- End Footer -->
