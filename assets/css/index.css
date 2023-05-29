@@ -337,4 +337,64 @@ input[type="number"] {
 
 .serviceDetails{
   display: flex;
+  flex-wrap: wrap;
+}
+
+.serviceTypesDetails{
+  flex: 1 0 300px;
+  margin: 10px;
+}
+
+ .file-input {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e6ebf2;
+  border: none;
+  border-radius: 5px;
+  color: #6c757d;
+  font-size: 16px;
+}
+
+ .file-input input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.browerseFile p{
+  color: yellow;
+}
+
+.QuoteBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuoteBtn button{
+  outline: none;
+  border: none;
+  background: #3498db;
+  padding: 12px 30px;
+  color: #e6ebf2;
+  border-radius: 6px;
+}
+
+ /* Media query for smaller screens */
+ @media (max-width: 768px) {
+  .formFlex_i, .formFlex_ii{
+    display: block;
+    width: 100%;
+  }
+  .flex-item {
+    flex-basis: 100%;
+  }
+
+  .formFlex_i select, .formFlex_ii select {
+    display: block;
+  }
 }

@@ -261,3 +261,33 @@
   new PureCounter();
 
 })()
+
+// Quote 
+
+document.getElementById('fileInput').addEventListener('change', function(e) {
+  var file = e.target.files[0];
+  if (file) {
+    if (validateFile(file)) {
+      console.log('Selected file:', file);
+      // Perform any desired actions with the selected file
+    } else {
+      console.error('Invalid file format!');
+      // Display an error message or perform error handling
+    }
+  }
+});
+
+function validateFile(file) {
+  // Get the file extension
+  var allowedExtensions = ['doc', 'docx', 'pdf', 'rtf', 'txt', 'zip', 'rar'];
+  var fileExtension = getFileExtension(file.name);
+
+  // Check if the file extension is allowed
+  return allowedExtensions.includes(fileExtension);
+}
+
+function getFileExtension(filename) {
+  // Get the file extension from the filename
+  return filename.split('.').pop().toLowerCase();
+}
+
