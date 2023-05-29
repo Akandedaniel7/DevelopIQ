@@ -202,8 +202,12 @@
                 </div>
             </div>
         </div>
-         <div class="copyright">
-          Copyright © 2021 DevelopIQ. All rights reserved  
+         <div class="copyright" id="copyright">
+             
+        &copy; <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+          </script> DevelopIQ. All rights reserved 
+          
         </div>
     </footer>
 </div>
