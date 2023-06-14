@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.blog-post {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+}
+
+.blog-post p {
+  margin-bottom: 10px;
+}
 
 .logo-span{
     color: #3498db;
