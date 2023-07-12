@@ -1060,3 +1060,17 @@ input[type="number"] {
     display: block;
   }
 }
+
+.seemore{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.seemore a{
+  color: #3498db;
+}
+
+.seemore i {
+  color: #3498db;
+}
