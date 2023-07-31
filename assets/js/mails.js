@@ -38,7 +38,7 @@ contactForm.addEventListener('submit', e => {
         subjectInput.value = '';
 
         setTimeout(() => {
-            submitBtn.innerText = 'Submit';
+            submitBtn.innerText = 'Send Message';
         }, 3000);
         
     }, (error) => {
